@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Header(){
   return (
-    <h1>Profiles</h1>
+    <Link to="/">home</Link> | <Link to="/profile">profile</Link> 
   );
 }
 

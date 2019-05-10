@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "./Header";
+import Welcome from "./Welcome";
 import Profile from "./Profile";
 import Error404 from "./Error404";
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
