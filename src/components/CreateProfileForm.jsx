@@ -2,9 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function CreateProfileForm(props){
+  let _firstName = null;
+  let _lastName = null;
+  let _birthday = null;
+  let _gender = null;
+  let _dayOfDeath = null;
+  let _maintainedBy = null;
+  let _notes = null;
+  var createProfileForm = {
+    backgroundColor: '#E0FFFF',
+    fontFamily: 'sans-serif',
+    paddingTop: '50px'
+  }
 
   return (
-    <div>
+    <div style={createProfileForm}>
       <form>
         <br/>
         <input
@@ -13,7 +25,7 @@ function CreateProfileForm(props){
           placeholder='First Name'
           ref={(input) => {_firstName = input;}}/>
         <br/>
-        <br/>
+        <br/>  
         <input
           type='text'
           id='lastName'
@@ -25,14 +37,14 @@ function CreateProfileForm(props){
           type='text'
           id='birthday'
           placeholder='Birthday'
-          ref={(input) => {_Birthday = input;}}/>
+          ref={(input) => {_birthday = input;}}/>
         <br/>
         <br/>
         <input
           type='text'
           id='gender'
           placeholder='Gender'
-          ref={(input) => {_Gender = input;}}/>
+          ref={(input) => {_gender = input;}}/>
         <br/>
         <br/>
         <input
@@ -50,9 +62,9 @@ function CreateProfileForm(props){
         <br/>
         <br/>
         <textarea
-          id='note'
-          placeholder='Note'
-          ref={(textarea) => {_note = textarea;}}/>
+          id='notes'
+          placeholder='Notes'
+          ref={(textarea) => {_notes = textarea;}}/>
         <br/>
         <button type='submit'>Submit!</button>
       </form>

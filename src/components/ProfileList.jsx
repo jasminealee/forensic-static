@@ -9,8 +9,8 @@ var masterProfileList = [
     birthday: '02/20/1989',
     dayOfDeath: '09/04/2019',
     gender: 'unknown',
-    notes: 'notes',
-    maintainedBy: 'yolanda'
+    maintainedBy: 'yolanda',
+    notes: 'notes'
   }
 ];
 
@@ -24,8 +24,8 @@ function ProfileList(props){
           birthday={props.birthday}
           dayOfDeath={props.dayOfDeath}
           gender={props.gender}
-          notes={props.notes}
           maintainedBy={props.maintainedBy}
+          notes={props.notes}
           key={index}/>
       )}
     </div>
