@@ -4,7 +4,8 @@ import Profile from './Profile';
 function NameList(){
   return (
     <Profile
-      name='Winston'
+      firstName='Winston'
+      lastName='Winston'
     />
   );
 }
