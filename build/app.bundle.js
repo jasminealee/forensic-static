@@ -10211,7 +10211,8 @@ module.exports = getHostComponentFromComposite;
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(85);
+__webpack_require__(85);
+(function webpackMissingModule() { throw new Error("Cannot find module \"dev-server\""); }());
 
 
 /***/ }),

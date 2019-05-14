@@ -1,8 +1,16 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header(){
+function Header() {
+  var header = {
+    backgroundColor: '#ecf0f1',
+    fontFamily: 'sans-serif',
+    paddingTop: '5px'
+  };
   return (
-    <h1>Help Queue</h1>
+    <div style={header} id="nav">
+      <a href="#">Home</a> | <a href="#">Contact</a> | <a href="#">Sign Up</a> | <a href="#">Sign In</a> | <a href="#">Sign Out</a> | <Link to="/profile">Profile</Link>
+    </div>
   );
 }
 
