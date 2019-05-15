@@ -19,7 +19,7 @@ function contact(props) {
         <input
           type='text'
           id='userEmail'
-          placeholder='User`s Email'
+          placeholder='User Email'
           ref={(input) => {_userEmail = input;}}/>
         <br/>
         <br/>
@@ -33,6 +33,7 @@ function contact(props) {
         <input
           type='text'
           id='recipientEmail'
+          placeholder='Recipient Email'
           ref={(input) => {_recipientEmail = input;}}/>
         <br/>
         <br/>

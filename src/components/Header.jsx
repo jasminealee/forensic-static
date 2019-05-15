@@ -7,9 +7,12 @@ function Header() {
     fontFamily: 'sans-serif',
     paddingTop: '5px'
   };
+
   return (
-    <div style={header} id="nav">
-      <a href="#">Home</a> | <Link to='/contact'>Contact</Link> | <Link to='/createprofileform'>Create Profile</Link> |<a href="#">Sign Up</a> | <a href="#">Sign In</a> | <a href="#">Sign Out</a> | <Link to='userProfile'>User Profile</Link>
+    <div>
+      <div style={header} id="nav">
+        <a href="#">Home</a> | <Link to='/contact'>Contact</Link> | <Link to='/createprofilecontrol'>Create Profile</Link> |<a href="#">Sign Up</a> | <a href="#">Sign In</a> | <a href="#">Sign Out</a> | <Link to='userProfile'>User Profile</Link>
+      </div>
     </div>
   );
 }
