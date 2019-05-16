@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './Profile';
 import PropTypes from 'prop-types';
 
+
 var masterProfileList = [
   {
     firstName: 'Winston',
@@ -18,18 +19,21 @@ function ProfileList(props){
   return (
     <div>
       <hr/>
-      {masterProfileList.map((profile, index) =>
+      {props.profileList.map((profile, index) =>
         <Profile firstName={profile.firstName}
           lastName={profile.lastName}
-          birthday={props.birthday}
-          dayOfDeath={props.dayOfDeath}
-          gender={props.gender}
-          maintainedBy={props.maintainedBy}
-          notes={props.notes}
+          birthday={profile.birthday}
+          dayOfDeath={profile.dayOfDeath}
+          gender={profile.gender}
+          maintainedBy={profile.maintainedBy}
+          notes={profile.notes}
           key={index}/>
       )}
     </div>
   );
 }
+ProfileList.propTypes = {
+  profileList: PropTypes.array
+};
 
 export default ProfileList;

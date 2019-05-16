@@ -9,15 +9,29 @@ function CreateProfileForm(props){
   let _dayOfDeath = null;
   let _maintainedBy = null;
   let _notes = null;
+
   var createProfileForm = {
     backgroundColor: '#E0FFFF',
     fontFamily: 'sans-serif',
     paddingTop: '50px'
   }
 
+  function handleCreateProfileFormSubmission(event) {
+      event.preventDefault();
+      props.onCreateProfileCreation({firstName: _firstName.value, lastName: _lastName.value, birthday: _birthday.value, gender: _gender.value, dayOfDeath: _dayOfDeath.value, maintainedBy: _maintainedBy.value, notes: _notes.value});
+      _firstName = '';
+      _lastName = '';
+      _birthday = '';
+      _gender = '';
+      _dayOfDeath = '';
+      _maintainedBy = '';
+      _notes = '';
+    }
+
+
   return (
     <div style={createProfileForm}>
-      <form>
+      <form onSubmit={handleCreateProfileFormSubmission}>
         <br/>
         <input
           type='text'
@@ -25,7 +39,7 @@ function CreateProfileForm(props){
           placeholder='First Name'
           ref={(input) => {_firstName = input;}}/>
         <br/>
-        <br/>  
+        <br/>
         <input
           type='text'
           id='lastName'
@@ -72,5 +86,8 @@ function CreateProfileForm(props){
   );
 }
 
+CreateProfileForm.propTypes = {
+  onCreateProfileCreation: PropTypes.func
+};
 
 export default CreateProfileForm;
