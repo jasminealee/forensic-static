@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td>User views the list of inputted animals.</td>
+      <td>User views the list of inputted forensics.</td>
     </tr>
     <tr>
       <td> Input </td>
@@ -61,15 +61,15 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td> User inputs information about a new animal. </td>
+      <td> User inputs information about a new forensic. </td>
     </tr>
     <tr>
       <td> Input </td>
-      <td> User clicks "Create Animal" and then is prompted with the question "Would you like to proceed?" Then they click "Yes". The user will then input a species and a note about the species before clicking "Submit". </td>
+      <td> User clicks "Create forensic" and then is prompted with the question "Would you like to proceed?" Then they click "Yes". The user will then input a species and a note about the species before clicking "Submit". </td>
     </tr>
     <tr>
       <td> Output </td>
-      <td> The user must click "Home" to view the updated Animals list. There is no database used, so all inputted information only appears until the page is refreshed. </td>
+      <td> The user must click "Home" to view the updated forensics list. There is no database used, so all inputted information only appears until the page is refreshed. </td>
   </table>
 
   <table>  
@@ -82,11 +82,11 @@
     </tr>
     <tr>
       <td> Input </td>
-      <td> User clicks "Admin". All animals that have been inputted will appear on the page. The user then clicks on the species of an animal. </td>
+      <td> User clicks "Admin". All forensics that have been inputted will appear on the page. The user then clicks on the species of an forensic. </td>
     </tr>
     <tr>
       <td> Output </td>
-      <td> The species that was clicked, the corresponding note, and the time the block was created appear in another block above all of the listed animals in bold font. The user can also click on a different species. In that case, that information replaces the information in the block  that was previously bolded. There is no database used, so all inputted information only appears until the page is refreshed. </td>
+      <td> The species that was clicked, the corresponding note, and the time the block was created appear in another block above all of the listed forensics in bold font. The user can also click on a different species. In that case, that information replaces the information in the block  that was previously bolded. There is no database used, so all inputted information only appears until the page is refreshed. </td>
   </table>    
 </details>
 
