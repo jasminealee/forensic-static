@@ -3,9 +3,9 @@
 | [**jasminealee**](https://github.com/jasminealee ) |
 
 
-## Animal Site Makeover
+## Forensic-Static
 
-###### Two Week Independent Project Initialized on April 16th, 2019.
+###### Capstone Project Initialized on April 16th, 2019.
 
 #### By Jasmine Lee
 ----------
@@ -137,4 +137,4 @@ If you have any questions or concerns please contact me at: [jasmine.al1722@gmai
 ## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Copyright (C) 2019 Jasmine Lee. All Rights Reserved.
 
-Copyright (c) 2019 [Jasmine Lee](https://github.com/jasminealee) 
+Copyright (c) 2019 [Jasmine Lee](https://github.com/jasminealee)
