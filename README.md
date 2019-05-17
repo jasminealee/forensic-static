@@ -11,7 +11,6 @@
 ----------
 
 ## Description
-A web application built in React that allows a user to view quick facts about animals and information about the author. It also allows a user to input a species, a note about the species, and submit the form.
 
 ## Component Tree
 ![Component-Tree](/images/component-tree.png)
@@ -99,14 +98,6 @@ Angular is a two-way data binding framework that updates the Real DOM, while Rea
       <td> The species that was clicked, the corresponding note, and the time the block was created appear in another block above all of the listed animals in bold font. The user can also click on a different species. In that case, that information replaces the information in the block  that was previously bolded. There is no database used, so all inputted information only appears until the page is refreshed. </td>
   </table>    
 </details>
-
-## Notes
-| Issue | Solution |
-|:-------:|:-----:|
-|Couldn't get program to run, issues were with the installments (kept receiving "properties undefined (all of my imports)", but had issues pinpointing installments that were causing the issues. | Re-Installed all installments. |
-|AboutUs.jsx had issues running any picture except for jpg images. | Using a .jpg image.|
-|My Github profile image didn't appear correctly in README.md. | Found a different link to connect my Github profile image to README.md. |
-|Came across isses fixing the header so that it appears underneath every species, note, and time block. | Issue has not been solved. |
 
 ## Setup and Use
 Prerequisites: [Node.js](https://nodejs.org/en/) and [Node.js Package Manager (npm)](https://www.npmjs.com/)
