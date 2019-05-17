@@ -15,12 +15,6 @@
 ## Component Tree
 ![Component-Tree](/images/component-tree.png)
 
-Changes from previous Component Tree:
-<ol>
-  <li>Changed the component names (aside from App, Header ConfirmationQuestions, and Error404) to my current component names.</li>
-  <li>Label App and NewAnimalControl as states.</li>
-</ol>
-
 ## Specifications
 <details>
 <summary>User Stories and Specifications</summary>
