@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Error404 from './Error404';
 import NameList from './NameList';
+import Profile from './Profile';
 import ProfileList from './ProfileList';
 import Contact from './Contact';
 import CreateProfileControl from './CreateProfileControl';
@@ -33,6 +34,7 @@ constructor(props) {
         <Switch>
            <Route exact path='/' component={NameList} />
            <Route path='/contact' component={Contact} />
+           <Route path='/profile' component={Profile} />
            <Route path='/createprofile' render={()=><CreateProfileControl onCreateProfileCreation={this.handleAddingCreateProfileToList} />} />
            <Route path='/profilelist' render={()=><ProfileList profileList={this.state.masterProfileList} />} />
            <Route path='/userProfile' component={UserProfile} />

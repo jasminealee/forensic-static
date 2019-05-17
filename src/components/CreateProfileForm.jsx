@@ -14,18 +14,18 @@ function CreateProfileForm(props){
     backgroundColor: '#E0FFFF',
     fontFamily: 'sans-serif',
     paddingTop: '50px'
-  }  
+  }
 
   function handleCreateProfileFormSubmission(event) {
       event.preventDefault();
       props.onCreateProfileCreation({firstName: _firstName.value, lastName: _lastName.value, birthday: _birthday.value, gender: _gender.value, dayOfDeath: _dayOfDeath.value, maintainedBy: _maintainedBy.value, notes: _notes.value});
-      _firstName = '';
-      _lastName = '';
-      _birthday = '';
-      _gender = '';
-      _dayOfDeath = '';
-      _maintainedBy = '';
-      _notes = '';
+      _firstName.value = '';
+      _lastName.value = '';
+      _birthday.value = '';
+      _gender.value = '';
+      _dayOfDeath.value = '';
+      _maintainedBy.value = '';
+      _notes.value = '';
     }
 
 
