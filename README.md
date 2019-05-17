@@ -104,7 +104,7 @@ Prerequisites: [Node.js](https://nodejs.org/en/) and [Node.js Package Manager (n
 
 * Open GitHub and go to https://github.com/jasminealee/forensic-static and click `clone or download`; copy the url provided.
 * Go to Terminal and clone the folder by inputting `$ git clone https://github.com/jasminealee/forensic-static` then enter.
-* Navigate to project directory in Terminal by typing `$ cd animal-site-makeover` then enter.
+* Navigate to project directory in Terminal by typing `$ cd ` then enter.
 * Input the command `$ npm install` then enter.
 * Input the command `$ npm run start` then enter.
 * Navigate to the local host that terminal provides to see the application.
