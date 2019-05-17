@@ -5,7 +5,7 @@
 
 ## Forensic-Static
 
-###### Capstone Project Initialized on April 16th, 2019.
+###### Capstone Project Initialized on May , 2019.
 
 #### By Jasmine Lee
 ----------
@@ -20,9 +20,6 @@ Changes from previous Component Tree:
   <li>Changed the component names (aside from App, Header ConfirmationQuestions, and Error404) to my current component names.</li>
   <li>Label App and NewAnimalControl as states.</li>
 </ol>
-
-## Difference Between Angular and React
-Angular is a two-way data binding framework that updates the Real DOM, while React is a one-way property binding JavaScript library that updates the Virtual DOM.
 
 ## Specifications
 <details>
