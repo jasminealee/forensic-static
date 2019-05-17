@@ -14,7 +14,7 @@ function CreateProfileForm(props){
     backgroundColor: '#E0FFFF',
     fontFamily: 'sans-serif',
     paddingTop: '50px'
-  }
+  }  
 
   function handleCreateProfileFormSubmission(event) {
       event.preventDefault();

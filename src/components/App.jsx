@@ -22,7 +22,7 @@ constructor(props) {
 
  handleAddingCreateProfileToList(create){
  var createMasterProfileList = this.state.masterProfileList.slice();
-    createMasterTicketList.push(createProfile);
+    createMasterProfileList.push(createProfile);
     this.setState({masterProfile: createMasterProfileList});
   }
 
