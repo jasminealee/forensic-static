@@ -1,16 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 function Profile(props){
   return (
     <div>
-      <hr/>
-      <h3>{props.firstName} {props.lastName}</h3>
-      <h3>{props.birthday}</h3>
-      <h3>{props.dayOfDeath}</h3>
-      <h3>{props.gender}</h3>
-      <h3>{props.maintainedBy}</h3>
-      <h2>{props.notes}</h2>
+      <h1>Name: {props.firstName} {props.lastName}</h1>
+      <h1>Birthday: {props.birthday}</h1>
+      <h1>Date of Death: {props.dayOfDeath}</h1>
+      <h1>Gender: {props.gender}</h1>
+      <h1>Collected By: {props.maintainedBy}</h1>
+      <h1>Notes: {props.notes}</h1>
       <hr/>
     </div>
   );
@@ -23,7 +22,7 @@ Profile.propTypes = {
   dayOfDeath: PropTypes.string,
   gender: PropTypes.string,
   maintainedBy: PropTypes.string,
-  notes:PropTypes.string
+  notes: PropTypes.string
 };
 
 export default Profile;

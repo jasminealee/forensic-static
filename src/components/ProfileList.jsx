@@ -1,27 +1,18 @@
-import React from 'react';
-import Profile from './Profile';
-import PropTypes from 'prop-types';
-
+import React from "react";
+import PropTypes from "prop-types";
+import Profile from "./profile";
 
 function ProfileList(props){
   return (
-    <div>
-      <hr/>
-      {props.profileList.map((profile, index) =>
-        <Profile firstName={profile.firstName}
-          lastName={profile.lastName}
-          birthday={profile.birthday}
-          dayOfDeath={profile.dayOfDeath}
-          gender={profile.gender}
-          maintainedBy={profile.maintainedBy}
-          notes={profile.notes}
-          key={index}/>
-      )}
-    </div>
+    <Profile
+      firstName="Winston"
+      lastName="Jet"
+      birthday="November 20, 1800"
+      dayOfDeath="October 19, 1893"
+      gender="Male"
+      maintainedBy="Ayden Sean, Sally Reeds, Ked Bure, Pete Kiser"
+      notes="Discovered in Riverside forest at 2:00 PM."/>
   );
 }
-ProfileList.propTypes = {
-  profileList: PropTypes.array
-};
 
 export default ProfileList;

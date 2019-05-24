@@ -1,6 +1,6 @@
 |<img src="https://github.com/identicons/jasminealee.png" width=100 alt="GitHub identicon for author jasminealee">|
 |:-----:|
-| [**jasminealee**](https://github.com/jasminealee ) |
+| [**jasminealee**](https://github.com/jasminealee) |
 
 
 ## Forensic-Static
@@ -11,9 +11,13 @@
 ----------
 
 ## Description
+A application that will in the future allow a user to create a forensic profile, contact me if they have questions, and view other forensic profiles. They will also have the option to sign in / create a personal account. At the moment, the application shows a hard coded example of a forensic profile and the forms for contact me and of creating a forensic profile, both of which are static.
 
 ## Component Tree
 ![Component-Tree](/images/component-tree.png)
+
+## Planning Repo
+https://github.com/jasminealee/forensic-planning
 
 ## Specifications
 <details>
@@ -25,15 +29,15 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td>User views the list of inputted forensics.</td>
+      <td>User views the list of hard coded forensic profiles.</td>
     </tr>
     <tr>
       <td> Input </td>
-      <td>User Clicks "Home".</td>
+      <td>User Clicks "Profile List".</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td>User sees a list of all species and notes that are inputted and the time they were created, in blocks. There is no database used, so all inputted information only appears until the page is refreshed.</td>
+      <td>User is redirected to "/" and sees a list of all hard coded forensic profiles.</td>
     </tr>
   </table>
 
@@ -43,15 +47,15 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td>User views the biography about the author.</td>
+      <td>User views the contact form.</td>
     </tr>
     <tr>
       <td> Input </td>
-      <td>User Clicks "About".</td>
+      <td>User Clicks "Contact".</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td>User sees a picture and information about the author.</td>
+      <td>User is redirected to "/contact" and sees the form they should fill out (in the future once state functions properly) if they have any questions. My email is provided.</td>
     </tr>
   </table>  
 
@@ -61,15 +65,15 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td> User inputs information about a new forensic. </td>
+      <td> User views the new profile form. </td>
     </tr>
     <tr>
       <td> Input </td>
-      <td> User clicks "Create forensic" and then is prompted with the question "Would you like to proceed?" Then they click "Yes". The user will then input a species and a note about the species before clicking "Submit". </td>
+      <td> User clicks "Create Profile".</td>
     </tr>
     <tr>
       <td> Output </td>
-      <td> The user must click "Home" to view the updated forensics list. There is no database used, so all inputted information only appears until the page is refreshed. </td>
+      <td> The user is redirected to "/newprofileform" and sees the form they should fill out (in the future once state functions properly) to create a new forensic profile. </td>
   </table>
 
   <table>  
@@ -78,21 +82,19 @@
     </tr>
     <tr>
       <td> Behavior </td>
-      <td> User selects a species on the Admin page. </td>
+      <td> User views a page that is not a part of the application. </td>
     </tr>
     <tr>
       <td> Input </td>
-      <td> User clicks "Admin". All forensics that have been inputted will appear on the page. The user then clicks on the species of an forensic. </td>
+      <td> User types http://localhost:8080/#/pie into the url. </td>
     </tr>
     <tr>
       <td> Output </td>
-      <td> The species that was clicked, the corresponding note, and the time the block was created appear in another block above all of the listed forensics in bold font. The user can also click on a different species. In that case, that information replaces the information in the block  that was previously bolded. There is no database used, so all inputted information only appears until the page is refreshed. </td>
+      <td> The application redirects to an Error404 message stating the desired page does not exist and provides a link to the home page(Profile List).</td>
   </table>    
-</details> 
+</details>
 
 ## Setup and Use
-Prerequisites: [Node.js](https://nodejs.org/en/) and [Node.js Package Manager (npm)](https://www.npmjs.com/)
-
 * Open GitHub and go to https://github.com/jasminealee/forensic-static and click `clone or download`; copy the url provided.
 * Go to Terminal and clone the folder by inputting `$ git clone https://github.com/jasminealee/forensic-static` then enter.
 * Navigate to project directory in Terminal by typing `$ cd ` then enter.
@@ -111,7 +113,6 @@ Prerequisites: [Node.js](https://nodejs.org/en/) and [Node.js Package Manager (n
 * Hot Module Replacement
 
 ## Known Bugs
-* Did not use a database, so all inputted information only appears until the page is refreshed.
 
 ## Contact
 If you have any questions or concerns please contact me at: [jasmine.al1722@gmail.com](mailto:jasmine.al1722@gmail.com)

@@ -1,48 +1,27 @@
 import React from 'react';
 import Header from './Header';
 import Error404 from './Error404';
-import NameList from './NameList';
-import Profile from './Profile';
 import ProfileList from './ProfileList';
+import Profile from './Profile';
 import Contact from './Contact';
-import CreateProfileControl from './CreateProfileControl';
-import UserProfile from './UserProfile';
+import NewProfileForm from './NewProfileForm';
 import { Switch, Route } from 'react-router-dom';
 
-
-
 class App extends React.Component {
-
-constructor(props) {
-   super(props);
-   this.state = {
-     masterProfileList: []
-   };
-   this.handleAddingCreateProfileToList = this.handleAddingCreateProfileToList.bind(this);
- }
-
- handleAddingCreateProfileToList(create){
- var createMasterProfileList = this.state.masterProfileList.slice();
-    createMasterProfileList.push(createProfile);
-    this.setState({masterProfile: createMasterProfileList});
-  }
 
   render(){
     return (
       <div>
         <Header/>
         <Switch>
-           <Route exact path='/' component={NameList} />
+           <Route exact path='/' component={ProfileList} />
            <Route path='/contact' component={Contact} />
            <Route path='/profile' component={Profile} />
-           <Route path='/createprofile' render={()=><CreateProfileControl onCreateProfileCreation={this.handleAddingCreateProfileToList} />} />
-           <Route path='/profilelist' render={()=><ProfileList profileList={this.state.masterProfileList} />} />
-           <Route path='/userProfile' component={UserProfile} />
-
+           <Route path='/newprofileform' component={NewProfileForm} />
            <Route component={Error404} />
         </Switch>
       </div>
-    );
+     );
   }
 }
 export default App;
