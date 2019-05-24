@@ -88,7 +88,7 @@
       <td> Output </td>
       <td> The species that was clicked, the corresponding note, and the time the block was created appear in another block above all of the listed forensics in bold font. The user can also click on a different species. In that case, that information replaces the information in the block  that was previously bolded. There is no database used, so all inputted information only appears until the page is refreshed. </td>
   </table>    
-</details>
+</details> 
 
 ## Setup and Use
 Prerequisites: [Node.js](https://nodejs.org/en/) and [Node.js Package Manager (npm)](https://www.npmjs.com/)
